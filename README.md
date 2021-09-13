@@ -1,7 +1,7 @@
-# portfolio-Mobile-Version
+# Mobile-Version
 
 
-# portfolio-Desktop-Version
+# Desktop-Version
 
 
 prepare Online university collage website
