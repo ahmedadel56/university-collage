@@ -91,8 +91,111 @@ p:nth-last-child(1) {
 }
 
 .offers {
-    background-image: url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(https://t4.ftcdn.net/jpg/02/00/68/69/360_F_200686969_GJ7zbz2qaNIE4dyHSbZkQXvNPzRuwlr3.jpg);
 }
-.offers *{
-    color: white;
+
+.offers * {
+  color: white;
+}
+
+.offers .title {
+  padding: 40px;
+}
+
+.title h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 30px;
+}
+
+.title hr {
+  background-color: #ec5242;
+  height: 2px;
+  border: none;
+  opacity: 1;
+  width: 5rem;
+  margin: auto;
+}
+
+.offers .card-work {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: #3c3f46;
+  margin: auto 10% 20px 10%;
+}
+
+.card-work .card-icon {
+  flex: 1 10%;
+  font-size: 30px;
+}
+
+.card-work .card-head {
+  flex: 1  30%;
+  font-size: 30px;
+  color: #ec5242;
+}
+
+.card-work .card-descrep {
+  flex: 3  60%;
+}
+
+@media (max-width: 500px) {
+  .card-work {
+    flex-wrap: wrap;
+  }
+
+  .card-work .card-icon {
+    font-size: 20px;
+  }
+
+  .card-work .card-head {
+    font-size: 20px;
+  }
+
+  .card-work .card-descrep {
+    font-size: 20px;
+  }
+}
+
+.join {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.join button {
+  font-size: 30px;
+  color: white;
+  background-color: #ec5242;
+  width: 70%;
+  height: 100px;
+  border: none;
+  outline: none;
+  margin: 30px auto;
+}
+
+.instructors .title h2 {
+  color: #484b52;
+}
+
+.partners {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners .line-break {
+  background-color: #ec5242;
+  height: 2px;
+  border: none;
+  opacity: 1;
+  width: 5rem;
+  margin: auto;
 }
