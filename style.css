@@ -189,6 +189,8 @@ p:nth-last-child(1) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #424146;
+  overflow: hidden;
 }
 
 .partners .line-break {
@@ -198,4 +200,49 @@ p:nth-last-child(1) {
   opacity: 1;
   width: 5rem;
   margin: auto;
+}
+
+.companies {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-left: 40px;
+  width: 100%;
+}
+
+@media  (max-width:500px) {
+
+  .companies {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media  (max-width:300px) {
+
+  .companies {
+    grid-template-columns: auto ;
+  }
+}
+.partner {
+  background-repeat: no-repeat;
+  height: 12vh;
+}
+
+.companies :nth-last-child(1) {
+  background-image: url(./images/sponsor1.png);
+}
+
+.companies :nth-last-child(2) {
+  background-image: url(./images/sponsor2.png);
+}
+
+.companies :nth-last-child(3) {
+  background-image: url(./images/sponsor3.png);
+}
+
+.companies :nth-last-child(4) {
+  background-image: url(./images/sponsor4.png);
+}
+
+.companies :nth-last-child(5) {
+  background-image: url(./images/sponsor5.png);
 }
