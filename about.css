@@ -9,6 +9,8 @@ main h1 {
 main h2:nth-last-child(2) {
   color: #3d3d3d;
   font-weight: 300;
+  line-height: 1,2;
+  letter-spacing: 4px;
 }
 
 p:nth-last-child(3) {
@@ -17,6 +19,8 @@ p:nth-last-child(3) {
   color: #5e5e5e;
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  line-height: 1,4;
+  letter-spacing: 4px;
 }
 
 main h3 a {
@@ -26,9 +30,80 @@ main h3 a {
 }
 
 @media (max-width: 300px) {
-    main h3 a {
-        font-size: 20px;
-        font-weight: 500;
-    }
+  main h3 a {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 
+.access-winner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.access-winner p {
+  background-color: white;
+  font-size: 20px;
+}
+
+.access-winner .winner-card {
+  width: 90%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 2px 2px #888;
+}
+
+.free-courses {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.free-courses p {
+  background-color: white;
+  font-size: 30px;
+  font-family: 'Lato', serif;
+  margin-bottom: 10px;
+}
+
+.free-courses h2 {
+  font-family: 'Ubuntu', sans-serif !important;
+  font-size: 25px;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/corse.webp);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 0, 0, 0.5) !important;
+    height: 15rem;
+    width: 80%;
+    margin-top: 20px;
+}
+.course .course-detail {
+  max-width: 100%;
+  height: 100%;
+  background-color: rgba(255, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.course-detail h3 {
+  font-size: calc(1.2rem + 0.3vw);
+  font-family:'Ubuntu',sans-serif;
+  color: #fff;
+
+}
