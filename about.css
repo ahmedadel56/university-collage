@@ -7,7 +7,7 @@ main h1 {
 }
 
 .free-courses h2 {
-  font-family: 'Ubuntu', sans-serif !important;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 25px;
 }
 
@@ -84,7 +84,7 @@ main h3 a {
   background-image: url(./images/corse.webp);
   background-position: center;
   background-size: cover;
-  background-color: rgba(255, 0, 0, 0.5) !important;
+  background-color: rgba(255, 0, 0, 0.5) ;
   height: 15rem;
   width: 80%;
   margin-top: 20px;

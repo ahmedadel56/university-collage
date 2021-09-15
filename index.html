@@ -13,16 +13,27 @@
    <title>University College</title>
 </head>
 <body tabindex="0">
-    <header>
+    <div class="quick-info">
+        <ul>
+            <li><a href="https://www.facebook.com/profile.php?id=100010729383548"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/tiredashell0"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li>English</li>
+            <li><a href="#home">My Page</a></li>
+            <li>Logout</li>
+        </ul>
+    </div>
+    <header id="home">
         <nav>
             <a href="#home" class="icon" id = "menu-icon">
                 <i class="fa fa-bars"></i>
             </a>
+            <a  id="nav-logo" href="./index.html">Global Learning University</a>
             <ul class="menu-desktop">
-                <li><a href="#news">Portoflio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="https://www.gmail.com"><img src="./icons/Mail.png" alt="mail button Should apper"></a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#join">Join</a></li>
+                <li><a href="#partners">Sponsor</a></li>
+                <li><a href="#">News</a></li>
             </ul>
         </nav>
     </header>
@@ -32,7 +43,7 @@
         <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word.</p>
         <h3>JavaScript Course Start At :  <span>2021.12.17(FRI) - 19(SUN)</span></h3>
     </main>
-        <section class="offers">
+        <section id="program" class="offers">
             <div class="title">
                 <h2>Main Features</h2>
                 <hr class="line-break">
@@ -64,10 +75,11 @@
                     <p class="card-descrep">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus non dolorem excepturi libero .</p>
                 </div>
             </section>
-            <div class="join">
+            <div id="join" class="join">
                 <button type="button">
                     See Our Tutorials 
                 </button>
+                <a href="#home">SEE WHOLE PROGRAM</a>
             </div>
         </section>
         <section class="instructors">
@@ -76,7 +88,7 @@
                 <hr class="line-break">
             </div>
         </section>
-        <section class="partners">
+        <section id="partners" class="partners">
             <h2>Partners</h2>
             <hr class="line-break">
             <div class="companies">
