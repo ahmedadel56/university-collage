@@ -15,54 +15,6 @@ h3 {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.quick-info {
-  width: 100%;
-  height: 4vh;
-  display: none;
-  justify-content: flex-end;
-  background-color: #3e3e3e;
-  color: white;
-}
-
-.quick-info ul {
-  margin-right: 10rem;
-  display: flex;
-  justify-content: space-between;
-}
-.quick-info ul li {
-  margin-left: 20px;
-  font-size: 20px;
-}
-.quick-info ul li a {
-  color: white;
-}
-.quick-info ul li i {
-  font-size: 30px;
-}
-header {
-  height: 10vh;
-  min-width: 100%;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  background-color: #efefef;
-}
-
-nav {
-  width: 100%;
-  padding-left: 30px;
-  display: inherit;
-  flex: 1 1;
-}
-
-header nav #nav-logo{
-  display: none;
-}
-
-nav ul {
-  display: none;
-}
-
 ul li {
   display: inline-block;
   list-style-type: none;
@@ -82,6 +34,68 @@ header nav a {
   font-size: 18px;
   line-height: 24px;
   width: 50%;
+}
+
+nav ul,
+.join a {
+  display: none;
+}
+
+.line-break {
+  background-color: #ec5242;
+  height: 2px;
+  border: none;
+  opacity: 1;
+  width: 5rem;
+  margin: auto auto 20px auto;
+}
+
+.quick-info {
+  width: 100%;
+  height: 4vh;
+  display: none;
+  justify-content: flex-end;
+  background-color: #3e3e3e;
+  color: white;
+}
+
+.quick-info ul {
+  margin-right: 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quick-info ul li {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.quick-info ul li a {
+  color: white;
+}
+
+.quick-info ul li i {
+  font-size: 30px;
+}
+
+header {
+  height: 10vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #efefef;
+}
+
+nav {
+  width: 100%;
+  padding-left: 30px;
+  display: inherit;
+  flex: 1 1;
+}
+
+header nav #nav-logo {
+  display: none;
 }
 
 header nav .icon {
@@ -156,6 +170,10 @@ main h3 span {
   font-size: 35px;
 }
 
+.partners .line-break {
+  margin-bottom: 50px;
+}
+
 .title h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -177,7 +195,7 @@ main h3 span {
   justify-content: center;
   align-items: center;
   padding: 30px;
-  background-color: #3c3f46;
+  background-color: rgba(60, 63, 70, 0.7);
   margin: auto 10% 20px 10%;
 }
 
@@ -231,10 +249,6 @@ main h3 span {
   margin: 30px auto;
 }
 
-.join a {
-  display: none;
-}
-
 .instructors {
   padding: 20px;
 }
@@ -251,15 +265,6 @@ main h3 span {
   background-color: #424146;
   overflow: hidden;
   padding: 20px;
-}
-
-.line-break {
-  background-color: #ec5242;
-  height: 2px;
-  border: none;
-  opacity: 1;
-  width: 5rem;
-  margin: auto auto 20px auto;
 }
 
 .companies {
@@ -308,6 +313,7 @@ main h3 span {
 
 footer {
   width: 70%;
+  padding: 30px;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -318,8 +324,8 @@ footer .copy-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
 }
 
@@ -334,23 +340,28 @@ footer .copy-logo {
 }
 
 @media only screen and (min-width: 768px) {
-  
   .quick-info {
     display: flex;
   }
+
   nav {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
   }
+
   nav .icon {
     display: none;
   }
-  
+
   nav .menu-desktop {
     display: flex;
     justify-content: flex-end;
     margin-right: 10rem;
-    flex: 2 1; 
+    flex: 2 1;
+  }
+
+  .menu-desktop li {
+    margin-left: 20px;
   }
 
   header nav #nav-logo {
@@ -359,44 +370,60 @@ footer .copy-logo {
     font-size: 25px;
   }
 
-  .menu-desktop ul {
-    display: flex; 
-  }
-  
-  
-  .menu-desktop ul li {
-    margin-left: 100px;
-  }
-
   nav ul li a {
     font-size: 20px;
     font-weight: 300;
-
   }
-  .offers .car-works {
+
+  .offers .card-works {
     display: grid;
-    grid-template-columns: auto auto auto auto ;
-
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 2px;
+    width: 80%;
+    margin: auto;
+    height: 50%;
   }
+
+  .card-works .card-work {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+    height: 70%;
+    margin: 0;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1000px) {
+    .offers .card-works {
+      grid-template-columns: auto auto auto;
+    }
+  }
+
   .offers .join button {
     display: none;
   }
+
   .offers .join {
     margin: 20px auto;
-    
   }
+
   .offers .join a {
     display: block;
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 15px;
   }
 
   #partners .companies {
     display: flex;
     height: 15vh;
   }
+
   .companies .partner {
     flex: 1 1;
     height: 100%;
+  }
+
+  footer .copy-right p:nth-last-child(1) {
+    display: block;
   }
 }
