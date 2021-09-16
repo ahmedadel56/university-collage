@@ -1,4 +1,4 @@
-// creating mobile menue elements
+// creating mobile menue elements for home page
 const div = document.createElement('div');
 const content = document.createElement('div');
 const closeBtn = document.createElement('a');

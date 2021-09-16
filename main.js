@@ -58,12 +58,15 @@ function createCards(cardsData = instructors) {
     const bodyTextTitle = document.createElement('p');
     bodyTextTitle.className = 'card-text1';
     bodyTextTitle.innerText = e.position;
+    const linBreak = document.createElement('hr');
+    linBreak.className = 'line-break';
     const bodyTextDescription = document.createElement('p');
     bodyTextDescription.className = 'card-text2';
     bodyTextDescription.innerText = e.about;
 
     cardBody.appendChild(bodyTitle);
     cardBody.appendChild(bodyTextTitle);
+    cardBody.appendChild(linBreak);
     cardBody.appendChild(bodyTextDescription);
 
     img.src = e.imageURL;

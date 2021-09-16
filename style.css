@@ -313,6 +313,11 @@ main h3 span {
   color: #484b52;
 }
 
+.card-body .line-break {
+  background-color: #d6d6d6;
+  margin: 4px 0 30px 0;
+}
+
 .instructors .title .line-break {
   margin-bottom: 3rem;
 }
@@ -360,7 +365,7 @@ main h3 span {
   color: #ec5242;
   line-height: 1.4;
   padding: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   flex: none;
 }
 
@@ -376,7 +381,7 @@ main h3 span {
   align-items: center;
   background-color: #424146;
   overflow: hidden;
-  padding: 20px;
+  padding: 70px;
 }
 
 .companies {
@@ -505,12 +510,26 @@ footer .copy-logo {
     margin: 0;
   }
 
+  .offers .join button {
+    display: none;
+  }
+
+  .offers .join {
+    margin: 20px auto;
+  }
+
+  .offers .join a {
+    display: block;
+    text-decoration: underline;
+    font-size: 15px;
+  }
+
   .instructors .cards {
     display: grid;
     grid-template-columns: auto auto;
     max-width: 100%;
     margin: auto;
-    padding: 30px;
+    padding: 100px;
   }
 
   .cards .card {
@@ -538,14 +557,16 @@ footer .copy-logo {
   }
 
   .card-body .card-title {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
+    font-family: 'COCOGOOSE', sans-serif;
   }
 
   .card-body .card-text1 {
     background-color: white;
-    font-size: 20px;
+    font-size: 25px;
     color: #ec5242;
+    font-style: italic;
     line-height: 1.4;
     padding: 0;
     margin-bottom: 10px;
@@ -555,6 +576,16 @@ footer .copy-logo {
   .card-body .card-text2 {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
+  }
+
+  #partners .companies {
+    display: flex;
+    height: 15vh;
+  }
+
+  .companies .partner {
+    flex: 1 1;
+    height: 100%;
   }
 
   .mobile-menu {
@@ -620,30 +651,6 @@ footer .copy-logo {
       .offers .card-works {
         grid-template-columns: auto auto auto;
       }
-    }
-
-    .offers .join button {
-      display: none;
-    }
-
-    .offers .join {
-      margin: 20px auto;
-    }
-
-    .offers .join a {
-      display: block;
-      text-decoration: underline;
-      font-size: 15px;
-    }
-
-    #partners .companies {
-      display: flex;
-      height: 15vh;
-    }
-
-    .companies .partner {
-      flex: 1 1;
-      height: 100%;
     }
 
     footer .copy-right p:nth-last-child(1) {
