@@ -2,25 +2,25 @@
 const instructors = [
   {
     name: 'Tim Urban',
-    position: 'Writer at Wait But Why, New York, NY, United States',
+    position: 'Writer at Wait But Why',
     about: 'With Wait But Why, Tim Urban demonstrates that complex and long-form writing can stand out in an online wilderness choked with listicles and clickbait.',
     imageURL: 'https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg',
   },
   {
     name: 'Stacey Abrams',
-    position: 'Former Georgia House Democratic Leader Stacey Abrams made history in 2018',
+    position: 'Former Georgia House Democratic Leader',
     about: "Stacey Abrams's 2018 campaign for governor of Georgia turned more voters than any Democrat in Georgia history, including former ",
     imageURL: 'https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg',
   },
   {
     name: 'Jose Antonio',
-    position: 'José Antonio Abreu founded El Sistema in 1975 to help Venezuelan kids learn to play musical instruments and be part of an orchestra. ',
+    position: 'José Antonio Abreu founded El Sistema in 1975 ',
     about: 'In Venezuela, the gulf between rich and poor is one of the starkest in the world. José Antonio Abreu -- economist, musician and reformer -- founded El Sistema',
     imageURL: 'https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg',
   },
   {
     name: 'Thomas Abt',
-    position: 'Thomas Abt developed an innovative, evidence-informed model to reduce urban violence.',
+    position: 'Thomas Abt developed an innovative, evidence-informed model',
     about: 'A senior fellow at the Council on Criminal Justice, Thomas Abt is a leading expert on reducing urban violence. In his book Bleeding Out: The Devastating Consequences',
     imageURL: 'https://thumbs.dreamstime.com/b/old-man-suit-talking-portrait-senior-caucasian-businessman-white-isolated-background-old-man-suit-talking-113566335.jpg',
   },
@@ -56,10 +56,10 @@ function createCards(cardsData = instructors) {
     bodyTitle.className = 'card-title';
     bodyTitle.innerText = e.name;
     const bodyTextTitle = document.createElement('p');
-    bodyTextTitle.className = 'card-text';
+    bodyTextTitle.className = 'card-text1';
     bodyTextTitle.innerText = e.position;
     const bodyTextDescription = document.createElement('p');
-    bodyTextDescription.className = 'card-text';
+    bodyTextDescription.className = 'card-text2';
     bodyTextDescription.innerText = e.about;
 
     cardBody.appendChild(bodyTitle);

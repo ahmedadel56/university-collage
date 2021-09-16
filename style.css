@@ -304,11 +304,69 @@ main h3 span {
 }
 
 .instructors {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
 }
 
 .instructors .title h2 {
   color: #484b52;
+}
+
+.instructors .title .line-break {
+  margin-bottom: 3rem;
+}
+
+.instructors .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+  padding: 30px;
+}
+
+.cards .card {
+  flex-basis: 5%;
+  max-width: 100%;
+  display: flex;
+  justify-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.cards .card .img-contain {
+  width: 20rem;
+  flex: 1;
+  margin: 10px;
+}
+
+.img-contain img {
+  width: 100%;
+}
+
+.cards .card .card-body {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body .card-title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.card-body .card-text1 {
+  background-color: white;
+  font-size: 20px;
+  color: #ec5242;
+  line-height: 1.4;
+  padding: 0;
+  margin-bottom: 10px;
+  flex: none;
+}
+
+.card-body .card-text2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
 }
 
 .partners {
@@ -447,6 +505,58 @@ footer .copy-logo {
     margin: 0;
   }
 
+  .instructors .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 30px;
+  }
+
+  .cards .card {
+    flex-basis: 5%;
+    max-width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    margin-bottom: 40px;
+  }
+
+  .cards .card .img-contain {
+    flex: 1 1;
+  }
+
+  .img-contain img {
+    width: 100%;
+    height: 70%;
+  }
+
+  .cards .card .card-body {
+    flex: 4 2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .card-body .card-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .card-body .card-text1 {
+    background-color: white;
+    font-size: 20px;
+    color: #ec5242;
+    line-height: 1.4;
+    padding: 0;
+    margin-bottom: 10px;
+    flex: none;
+  }
+
+  .card-body .card-text2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+  }
+
   .mobile-menu {
     height: 0%;
     width: 100%;
@@ -460,77 +570,84 @@ footer .copy-logo {
     transition: 0.5s;
   }
 
-  .mobile-menu a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff5e1;
-    display: block;
-    transition: 0.3s;
-  }
-
-  .content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: start;
-  }
-
-  .content a {
-    font-family: 'Inter', sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 44px;
-    display: flex;
-    align-items: center;
-    color: #fff5e1;
-    width: 70%;
-    margin: auto;
-    padding-left: 20px;
-    border-bottom: 1px solid #6f6c6b;
-  }
-
-  .mobile-menu .closebtn {
-    position: absolute;
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-    height: 12px;
-    width: 12px;
-    border-radius: 0;
-  }
-
-  @media only screen and (min-width: 768px) and (max-width: 1000px) {
-    .offers .card-works {
-      grid-template-columns: auto auto auto;
+  @media only screen and (min-width: 768px) and (max-width: 1050px) {
+    .instructors .cards {
+      display: grid;
+      grid-template-columns: auto;
     }
-  }
 
-  .offers .join button {
-    display: none;
-  }
+    .mobile-menu a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff5e1;
+      display: block;
+      transition: 0.3s;
+    }
 
-  .offers .join {
-    margin: 20px auto;
-  }
+    .content {
+      position: relative;
+      top: 25%;
+      width: 100%;
+      text-align: start;
+    }
 
-  .offers .join a {
-    display: block;
-    text-decoration: underline;
-    font-size: 15px;
-  }
+    .content a {
+      font-family: 'Inter', sans-serif;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 44px;
+      display: flex;
+      align-items: center;
+      color: #fff5e1;
+      width: 70%;
+      margin: auto;
+      padding-left: 20px;
+      border-bottom: 1px solid #6f6c6b;
+    }
 
-  #partners .companies {
-    display: flex;
-    height: 15vh;
-  }
+    .mobile-menu .closebtn {
+      position: absolute;
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+      height: 12px;
+      width: 12px;
+      border-radius: 0;
+    }
 
-  .companies .partner {
-    flex: 1 1;
-    height: 100%;
-  }
+    @media only screen and (min-width: 768px) and (max-width: 1000px) {
+      .offers .card-works {
+        grid-template-columns: auto auto auto;
+      }
+    }
 
-  footer .copy-right p:nth-last-child(1) {
-    display: block;
+    .offers .join button {
+      display: none;
+    }
+
+    .offers .join {
+      margin: 20px auto;
+    }
+
+    .offers .join a {
+      display: block;
+      text-decoration: underline;
+      font-size: 15px;
+    }
+
+    #partners .companies {
+      display: flex;
+      height: 15vh;
+    }
+
+    .companies .partner {
+      flex: 1 1;
+      height: 100%;
+    }
+
+    footer .copy-right p:nth-last-child(1) {
+      display: block;
+    }
   }
 }
