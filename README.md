@@ -1,16 +1,19 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
+
 # Capstone project Module 1
 
-> This capstone project is frontend related, using the templaete of Cindy Shin (thanks a lot Cindy), that you can visit in this url: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
+> This capstone project is frontend related, using the template of Cindy Shin (thanks a lot Cindy), that you can visit in this Url: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
 > I hope you enjoy it.
 
 ![image](https://user-images.githubusercontent.com/43178495/133684252-27d182dd-7aa1-43b5-a5aa-6dcbddcf00a5.png)
+![image](https://user-images.githubusercontent.com/43178495/133693150-f26ee4a5-bb01-4fa5-b895-689fc89ecc70.png)
 
 
-prepare Online university collage website
+prepare Online university college website
 # Additional description about the project and its features.
 
-This project Is for setting Portfolio website to include all info about me and my previos projects
+This project Is for setting Global Learning University website that provides courses for students all over the world
 
 # Built With
 * HTML
@@ -27,9 +30,8 @@ To get a local copy of the repository please run the following commands on your 
 1. git clone https://github.com/ahmedadel56/university-collage.git
 2. cd university-collage
 3. git checkout desktop
-4. code .   (for this you must to have installed vscode, go to this url for more info: https://code.visualstudio.com/download)
-5. open with live server (alt + l alt + o)
-6. to transpile STYLE.SCSS into Style.css, you can use Live Sass COmpiler, that is in extensions in VSCode
+4. code .   (for this you must have installed vscode, go to this URL for more info: https://code.visualstudio.com/download)
+5. open with a live server (alt + l alt + o)
 
 # Author
 
@@ -43,13 +45,13 @@ Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 
 # Show your support
-Give a star if you like this project!
+Give a ⭐️ if you like this project!
 
 # Acknowledgments
-* Hat tip to anyone who's code was used
+* Hat tip to anyone whose code was used
 * Inspiration
 * etc
 
 ## 📝 License
 
-This project is [MIT](./MIT.md) licensed.
+This project is [MIT](./LICENCE.md) licensed.
