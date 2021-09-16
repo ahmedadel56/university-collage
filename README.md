@@ -39,6 +39,11 @@ To get a local copy of the repository please run the following commands on your 
 
 - GitHub: [@githubhandle](https://github.com/ahmedadel56)
 
+## Explaining Project Video
+
+https://www.loom.com/share/79d94ecc04b14c548462f5cbb5f4f8c8
+
+
 # Contributing
 Contributions, issues, and feature requests are welcome!
 
