@@ -54,7 +54,7 @@ Give a ⭐️ if you like this project!
 
 # Acknowledgments
 
-*   > This capstone project is frontend related, using the template of Cindy Shin (thanks a lot Cindy)
+*  This capstone project is frontend related, using the template of Cindy Shin (thanks a lot Cindy)
 *  you can visit in this Url: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015
 
 ## 📝 License
