@@ -21,7 +21,7 @@ This project Is for setting Global Learning University website that provides cou
 * Java Script
 
 # Live Demo
-https://ahmedadel56.github.io/university-collage/
+ou can checkout website [here](https://ahmedadel56.github.io/university-collage/)
 
 ## Getting Started
 
